@@ -5,16 +5,19 @@ namespace OOPv2
 {
     class Dog
     {
+        //Declare Fields
         private int hairLength;
         private int height;
-        private double runningSpeed;
-        private double weight;
-        private bool Run = true;
-        private bool Bark = true;
-        private bool Potty = true;
-        private bool Cuddle = true;
+        private int runningSpeed;
+        private int weight;
 
-        //fields
+        
+        //private bool Run = true;
+        //private bool Bark = true;
+        //private bool Potty = true;
+        //private bool Cuddle = true;
+
+        //Declare Properties
         public int HairLength
         {
             get { return this.hairLength; }
@@ -27,25 +30,25 @@ namespace OOPv2
             set { this.height = value; }
         }
 
-        public double RunningSpeed
+        public int RunningSpeed
         {
             get { return this.runningSpeed; }
             set { this.runningSpeed = value; }
         }
 
-        public double Weight
+        public int Weight
         {
             get { return this.weight; }
             set { this.weight = value; }
         }
 
-        //Constructor
+        //Declare Constructor
         public Dog()
         {
             //default constructor
         }
 
-        public Dog(int hairLength, int height, double runningSpeed, double weight)
+        public Dog(int hairLength, int height, int runningSpeed, int weight)
         {
             this.hairLength = hairLength;
             this.height = height;
@@ -53,45 +56,50 @@ namespace OOPv2
             this.weight = weight;
         }
 
-        //Methods
-        public void Runs()
+        public void Run()
         {
-            if (Run)
-            {
-                Run = false;
-            }
-
-            Console.WriteLine("Can dog run? " + Run);
+            Console.Write("Your dog can run {0} miles per hour" , runningSpeed);
         }
 
-        public void Barks()
-        {
-            if (Bark)
-            {
-                Bark = false;
-            }
+        ////Methods
+        //public void Runs()
+        //{
+        //    if (Run)
+        //    {
+        //        Run = false;
+        //    }
 
-            Console.WriteLine("Can dog bark? " + Bark);
-        }
+        //    Console.WriteLine("Can dog run? " + Run);
+        //}
 
-        public void Potties()
-        {
-            if (Potty)
-            {
-                Potty = false;
-            }
+        //public void Barks()
+        //{
+        //    if (Bark)
+        //    {
+        //        Bark = false;
+        //    }
 
-            Console.WriteLine("Does dog go potty? " + Potty);
-        }
+        //    Console.WriteLine("Can dog bark? " + Bark);
+        //}
 
-        public void Cuddles()
-        {
-            if (Cuddle)
-            {
-                Cuddle = false;
-            }
+        //public void Potties()
+        //{
+        //    if (Potty)
+        //    {
+        //        Potty = false;
+        //    }
 
-            Console.WriteLine("Does dog cuddle? " + Cuddle);
-        }
+        //    Console.WriteLine("Does dog go potty? " + Potty);
+        //}
+
+        //public void Cuddles()
+        //{
+        //    if (Cuddle)
+        //    {
+        //        Cuddle = false;
+        //    }
+
+        //    Console.WriteLine("Does dog cuddle? " + Cuddle);
+        //}
     }
 }
