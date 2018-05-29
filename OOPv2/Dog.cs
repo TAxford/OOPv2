@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
 namespace OOPv2
 {
     class Dog
@@ -40,7 +39,7 @@ namespace OOPv2
             set { this.weight = value; }
         }
 
-        //Cunstructor
+        //Constructor
         public Dog()
         {
             //default constructor
@@ -54,5 +53,45 @@ namespace OOPv2
             this.weight = weight;
         }
 
+        //Methods
+        public void Runs()
+        {
+            if (Run)
+            {
+                Run = false;
+            }
+
+            Console.WriteLine("Can dog run? " + Run);
+        }
+
+        public void Barks()
+        {
+            if (Bark)
+            {
+                Bark = false;
+            }
+
+            Console.WriteLine("Can dog bark? " + Bark);
+        }
+
+        public void Potties()
+        {
+            if (Potty)
+            {
+                Potty = false;
+            }
+
+            Console.WriteLine("Does dog go potty? " + Potty);
+        }
+
+        public void Cuddles()
+        {
+            if (Cuddle)
+            {
+                Cuddle = false;
+            }
+
+            Console.WriteLine("Does dog cuddle? " + Cuddle);
+        }
     }
 }
